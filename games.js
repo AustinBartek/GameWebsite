@@ -1,4 +1,4 @@
-import { hsvToRgb } from "/all.js";
+import { hsvToRgb } from "./all.js";
 
 const buttonList = document.getElementById("searchList");
 
