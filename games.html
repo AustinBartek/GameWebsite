@@ -2,11 +2,25 @@
 <html>
     <head>
         <title>Gams :)</title>
-        <link rel="stylesheet" href="all.css">
-        <link rel="stylesheet" href="games.css">
+        <link rel="stylesheet" href="/all.css">
+        <link rel="stylesheet" href="/games.css">
+        <script src="games.js" type="module" defer></script>
     </head>
     <body>
-        <button class="niceButton" onclick="location.replace('index.html')">Home</button>
-        <button class="niceButton" onclick="location.replace('checkers.html')">Checkers</button>
+        <button class="niceButton" onclick="location.href = 'index.html';">Home</button>
+
+        <div id="searchList" class="gameButtonList" style="width:50vw">
+            <button class="gameButton" onclick="location.href = 'games/checkers/checkers.html';" data-name="checkers">
+                <h1>Checkers</h1>
+                <p>Classic game of Checkers!</p>
+                <img src="resources/checkers.png">
+            </button>
+            <button class="gameButton" onclick="location.href = 'games/checkers/pong.html';" data-name="pong">
+                <h1>Pong</h1>
+                <p>Atari Pong! Hit the ball back and forth!</p>
+                <img src="resources/pong.png">
+            </button>
+        </div>
+
     </body>
 </html>

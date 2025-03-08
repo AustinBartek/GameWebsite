@@ -1,3 +1,5 @@
+import { playChessPieceSound } from "../../all.js";
+
 "use strict";
 
 const canvas = document.getElementById("c");
@@ -319,6 +321,7 @@ function boardClicked(board, x, y) {
 
             if (selectedPiece.canMove(boardX, boardY)[moveRequirement]) {
                 selectedPiece.move(boardX, boardY);
+                playChessPieceSound();
                 advanceGame();
             }
             selectedPiece = null;
@@ -335,10 +338,11 @@ canvas.addEventListener("click", (evt) => {
     boardClicked(board, evt.offsetX, evt.offsetY);
 });
 
-function reset() {
+function resetBoard() {
     currentPlayer = 0;
     selectedPiece = null;
 
     board.initPieces();
     drawBoard(board);
 }
+window.resetBoard = resetBoard;
