@@ -2,12 +2,12 @@
 <html>
     <head>
         <title>Checkers</title>
-        <link rel="stylesheet" href="/all.css">
+        <link rel="stylesheet" href="all.css">
         <link rel="stylesheet" href="checkers.css">
         <script src="checkers.js" defer></script>
     </head>
     <body>
-        <button class="niceButton" onclick="changePath('/games.html')">Back to Games</button>
+        <button class="niceButton" onclick="location.replace('games.html')">Back to Games</button>
         <h1 id="title">CHECKERS!</h1>
         <canvas id="c"></canvas>
         <button class="niceButton" onclick="reset()" id="reset">RESET</button>
