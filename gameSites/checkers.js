@@ -342,3 +342,10 @@ function reset() {
     board.initPieces();
     drawBoard(board);
 }
+
+function changePath(newPath) {
+    let path = location.pathname;
+    let locString = location.toString();
+    locString = locString.replaceAll(path, newPath);
+    location.replace(locString);
+}
