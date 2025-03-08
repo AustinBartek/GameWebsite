@@ -1,0 +1,27 @@
+:root {
+    --boardSize: 90;
+}
+
+#c {
+    width: calc(var(--boardSize) * 1vmin);
+    height: calc(var(--boardSize) * 1vmin);
+    position: absolute;
+    top: calc(50vh - var(--boardSize)*0.5vmin);
+    left: calc(50vw - var(--boardSize)*0.5vmin);
+}
+
+#title {
+    position: absolute;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3vmin;
+    top: calc(50vh - var(--boardSize)*0.5vmin - 6vmin);
+    left: calc(50vw - 3em);
+}
+
+#reset {
+    width: 12vmin;
+    position: absolute;
+    font-size: 3vmin;
+    top: calc(50vh + var(--boardSize)*0.5vmin);
+    left: calc(50vw - 6vmin);
+}
