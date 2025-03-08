@@ -3,11 +3,11 @@
     <head>
         <title>Checkers</title>
         <link rel="stylesheet" href="/all.css">
-        <link rel="stylesheet" href="/games/checkers/checkers.css">
+        <link rel="stylesheet" href="games/checkers/checkers.css">
         <script src="checkers.js" type="module" defer></script>
     </head>
     <body>
-        <button class="niceButton" onclick="location.replace('/games.html')">Back to Games</button>
+        <button class="niceButton" onclick="location.href = '/games.html'">Back to Games</button>
         <h1 id="title">CHECKERS!</h1>
         <canvas id="c"></canvas>
         <button class="niceButton" onclick="resetBoard()" id="reset">RESET</button>
